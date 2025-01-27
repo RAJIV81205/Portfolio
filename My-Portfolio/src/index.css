@@ -118,14 +118,14 @@ nav ul li a:hover {
 }
 
 
-.div1 h3{
+.about h3{
   color: rgb(237, 233, 233);
   text-align: left;
   padding: 5px;
   font-weight: 600;
 }
 
-.div1 p{
+.about p{
   color: gray;
   padding: 5px;
   font-size: 1rem;
@@ -149,9 +149,15 @@ nav ul li a:hover {
   grid-area: 8 / 7 / 11 / 10;
 }
 
-.about img {
+.div1 img {
   width: 100%;
   height: 100%;
+}
+
+.div2 img {
+  margin: 20px 0;
+  filter: invert(100%);
+  width: 100%;
 }
 
 

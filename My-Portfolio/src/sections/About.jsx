@@ -1,3 +1,5 @@
+import Globel from "../components/Globe";
+
 function About() {
   return (
     <div className="about">
@@ -10,8 +12,17 @@ function About() {
         </p>
       </div>
       <div className="div2">
-        <img src="assets/grid2.png" alt="" /> </div>
-      <div className="div3"> </div>
+        <img src="assets/grid2.png" alt="" />
+        <h3>Tech Stack</h3>
+        <p>
+          I specialize in a variety of languages, frameworks, and tools that
+          allow me to build robust and scalable applications
+        </p>
+      </div>
+      <div className="div3">
+        <Globel />
+        
+      </div>
       <div className="div4"> </div>
       <div className="div5"> </div>
     </div>
