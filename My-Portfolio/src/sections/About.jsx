@@ -1,4 +1,4 @@
-import Globel from "../components/Globe";
+
 
 function About() {
   return (
@@ -20,8 +20,10 @@ function About() {
         </p>
       </div>
       <div className="div3">
-        <Globel />
-        
+        <img src="assets/grid5.png" alt="" />
+        <h3>I’m very flexible with time zone communications & locations</h3>
+        <p>I&apos;m based in India and open to remote work worldwide.</p>
+    
       </div>
       <div className="div4"> </div>
       <div className="div5"> </div>
