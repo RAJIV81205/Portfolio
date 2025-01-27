@@ -10,7 +10,6 @@
   font-family: "Roboto", serif;
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
 }
@@ -71,20 +70,28 @@ nav ul li a:hover {
 
 
 .hero {
+
   display: flex;
+  position: relative; 
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: calc(100vh - 72px);
-
-
+  overflow: hidden;
 }
 
-.hero h1 {
+
+
+.hero h1  , .hero .split-text {
   color: aliceblue;
   font-size: 2rem;
   font-weight: 800;
 
+}
+
+.split-text::after{
+  content: "👋";
+  transition-delay: 2s;
 }
 
 .hero p {
@@ -194,3 +201,14 @@ nav ul li a:hover {
 footer {
   height: 60vh;
 }
+
+.squares-canvas {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block; 
+  position: absolute;
+  opacity: 0.1;
+
+}
+
