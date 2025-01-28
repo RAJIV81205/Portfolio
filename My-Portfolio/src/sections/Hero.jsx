@@ -1,14 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import Squares from "../components/Squares";
 import SplitText from "../components/Split";
-
 import GradientText from "../components/GradientText";
 
 gsap.registerPlugin(TextPlugin);
 
 const Hero = () => {
+  const [showGradientText, setShowGradientText] = useState(false); // Control visibility of GradientText
   const textRef = useRef(null);
 
   const handleAnimationComplete = () => {
@@ -24,6 +24,15 @@ const Hero = () => {
   ];
 
   useEffect(() => {
+    // Show GradientText after 1 second
+    const timeout = setTimeout(() => {
+      setShowGradientText(true);
+    }, 2500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
     if (!textRef.current) return;
 
     const tl = gsap.timeline({ repeat: -1 });
@@ -35,26 +44,13 @@ const Hero = () => {
         text: message,
         ease: "none",
       })
-
         // Pause after typing
         .to({}, { duration: 1 })
-
-        // Delete the message character by character
+        // Delete the message
         .to(textRef.current, {
-          delay: 1,
           duration: 2,
           text: "",
           ease: "none",
-          onUpdate: function () {
-            const progress = this.progress();
-            const currentText = message.slice(
-              0,
-              Math.floor((1 - progress) * message.length)
-            );
-            if (textRef.current) {
-              textRef.current.textContent = currentText;
-            }
-          },
         });
 
       // Pause between messages (except after the last one)
@@ -66,7 +62,7 @@ const Hero = () => {
     return () => {
       tl.kill();
     };
-  }, []);
+  }, [messages]);
 
   return (
     <div className="hero">
@@ -91,14 +87,15 @@ const Hero = () => {
         />
       </h1>
 
-      <GradientText
-        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-        animationSpeed={8}
-        showBorder={false}
-      >
-        <p  className="mess" ref={textRef}></p>
-      </GradientText>
-      
+      {showGradientText && (
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={8}
+          showBorder={false}
+        >
+          <p className="mess" ref={textRef}></p>
+        </GradientText>
+      )}
     </div>
   );
 };
