@@ -369,5 +369,14 @@ footer {
   border-top: none;
 }
 
+button{
+  width: 90%;
+  padding: 10px 0;
+  background: transparent;
+  color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
 
 
