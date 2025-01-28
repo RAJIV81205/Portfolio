@@ -71,7 +71,6 @@ const ClickSpark = ({
       sparksRef.current = sparksRef.current.filter((spark) => {
         const elapsed = timestamp - spark.startTime;
         if (elapsed >= duration) {
-          // Spark finished its animation
           return false;
         }
 
