@@ -4,6 +4,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 import Squares from "../components/Squares";
 import SplitText from "../components/Split";
 
+import GradientText from "../components/GradientText";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -77,7 +78,6 @@ const Hero = () => {
         hoverFillColor="#fff"
       />
       <h1>
-        
         <SplitText
           text="Hi, I'm Rajiv"
           className="split-text"
@@ -91,7 +91,14 @@ const Hero = () => {
         />
       </h1>
 
-      <p ref={textRef}></p>
+      <GradientText
+        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+        animationSpeed={8}
+        showBorder={false}
+      >
+        <p  className="mess" ref={textRef}></p>
+      </GradientText>
+      
     </div>
   );
 };
