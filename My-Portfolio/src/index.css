@@ -107,11 +107,12 @@ nav ul li a:hover {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 2px;
-  white-space: "nowrap";
-  overflow: "hidden";
-  border-right: "2px solid white";
+  white-space: "wrap";
+  overflow: hidden;
+
   display: "inline-block";
-  height: 50px;
+  text-align: center;
+
 
 
 }
