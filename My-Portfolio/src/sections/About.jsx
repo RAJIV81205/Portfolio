@@ -16,7 +16,7 @@ function About() {
       <div className="parent">
         <SpotlightCard
           className="custom-spotlight-card div1"
-          spotlightColor="rgba(204, 207, 207, 0.2)"
+          spotlightColor="rgba(149, 152, 152, 0.2)"
         >
           <img src="assets/grid1.png" alt="" />
           <h3>Hi, I’m Rajiv Dubey</h3>
@@ -43,13 +43,18 @@ function About() {
         >
           <img src="assets/grid5.png" alt="" />
           <h3>I’m very flexible with time zone communications & locations</h3>
-          <p>I&apos;m based in India and open to remote work worldwide.Available for global engagements, ensuring flexibility in scheduling and responsiveness.Proficient in remote work dynamics, adapting to various time zones for effective collaboration.</p>
+          <p>I&apos;m based in India and open to remote work worldwide.</p>
           <Button text="Let's Connect" />
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card div4"
           spotlightColor="rgba(204, 207, 207, 0.2)"
-        ></SpotlightCard>
+        >
+          <img src="assets/grid3.png" alt="" />
+          <h3>My Passion for Coding</h3>
+          <p> I love solving problems and building things through code. Programming isn&apos;t just my
+          profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+        </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card div5"
           spotlightColor="rgba(204, 207, 207, 0.2)"
