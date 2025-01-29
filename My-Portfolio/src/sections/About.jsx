@@ -32,7 +32,7 @@ function About() {
           <img src="assets/grid1.png" alt="" />
           <h3>Hi, I’m Rajiv Dubey</h3>
           <p>
-            With 12 years of experience, I have honed my skills in both frontend
+            With 3 years of experience, I have honed my skills in both frontend
             and backend dev, creating dynamic and responsive websites.
           </p>
         </SpotlightCard>
