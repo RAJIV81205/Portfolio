@@ -16,6 +16,9 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <div className="hamburger-menu">
+        <img src="assets/burger-bar.png" alt="" />
+      </div>
     </header>
   );
 }
