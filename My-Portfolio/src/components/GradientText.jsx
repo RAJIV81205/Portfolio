@@ -1,5 +1,4 @@
-import React from "react"
-
+import React from "react";
 
 const GradientText = ({
   children,
@@ -11,18 +10,19 @@ const GradientText = ({
   const gradientStyle = {
     "--gradient-colors": colors.join(", "),
     "--animation-speed": `${animationSpeed}s`,
-  }
+  };
 
   return (
-    <div className={`animated-gradient-text ${className}`} style={gradientStyle}>
+    <div
+      className={`animated-gradient-text ${className}`}
+      style={gradientStyle}
+    >
       {showBorder && <div className="gradient-overlay"></div>}
       <div className="text-content" style={gradientStyle}>
         {children}
-        <span className="gradient-cursor"></span>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GradientText
-
+export default GradientText;
