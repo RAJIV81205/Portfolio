@@ -1,9 +1,19 @@
+import { useRef } from "react";
+
 function Header() {
+  const menuRef = useRef(null);
+
+  const hamburger = () => {
+    if (menuRef.current) {
+      menuRef.current.style.display = menuRef.current.style.display === "none" ? "flex" : "none";
+    }
+  };
+
   return (
     <header>
       <div className="logo-name">Rajiv</div>
 
-      <nav>
+      <nav id="menu" ref={menuRef}>
         <ul>
           <li>
             <a href="#about">About</a>
@@ -16,8 +26,9 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <div className="hamburger-menu">
-        <img src="assets/burger-bar.png" alt="" />
+
+      <div className="hamburger-menu" onClick={hamburger}>
+        <img src="assets/burger-bar.png" alt="Menu" />
       </div>
     </header>
   );

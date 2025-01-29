@@ -251,6 +251,7 @@ nav ul li a:hover {
     position: relative;
     width: 20%;
     display: none;
+    z-index: 9999;
   }
 
   nav ul{
