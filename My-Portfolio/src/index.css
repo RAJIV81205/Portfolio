@@ -125,7 +125,6 @@ nav ul li a:hover {
 .parent {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   width: 80vw;
