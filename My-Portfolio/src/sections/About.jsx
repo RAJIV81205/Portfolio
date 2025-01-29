@@ -1,8 +1,19 @@
 import Button from "../components/Button";
 import SpotlightCard from "../components/SpotlightCard";
 import TrueFocus from "../components/TrueFocus";
+import { useState } from "react";
 
 function About() {
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(" lucky81205@gmail.com");
+    setHasCopied(true);
+
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
   return (
     <div className="about" id="about">
       <TrueFocus
@@ -52,13 +63,27 @@ function About() {
         >
           <img src="assets/grid3.png" alt="" />
           <h3>My Passion for Coding</h3>
-          <p> I love solving problems and building things through code. Programming isn&apos;t just my
-          profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+          <p>
+            {" "}
+            I love solving problems and building things through code.
+            Programming isn&apos;t just my profession—it&apos;s my passion. I
+            enjoy exploring new technologies, and enhancing my skills.
+          </p>
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card div5"
           spotlightColor="rgba(204, 207, 207, 0.2)"
-        ></SpotlightCard>
+        >
+          <img src="assets/grid4.png" alt="" />
+
+          <div className="copy-container" onClick={handleCopy}>
+            <img
+              src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
+              alt="copy"
+            />
+            <p>lucky81205@gmail.com</p>
+          </div>
+        </SpotlightCard>
       </div>
     </div>
   );
