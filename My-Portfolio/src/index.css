@@ -15,7 +15,7 @@
 
 }
 
-#root{
+#root {
   position: relative;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover {
 .hero {
 
   display: flex;
-  position: relative; 
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -89,7 +89,8 @@ nav ul li a:hover {
 
 
 
-.hero h1  , .hero .split-text {
+.hero h1,
+.hero .split-text {
   color: aliceblue;
   font-size: 2.5rem;
   font-weight: 800;
@@ -97,7 +98,7 @@ nav ul li a:hover {
 
 }
 
-.split-text::after{
+.split-text::after {
   content: "👋";
 }
 
@@ -114,7 +115,8 @@ nav ul li a:hover {
 
 
 }
-.hero .mess::after{
+
+.hero .mess::after {
   content: "|";
 
 }
@@ -134,22 +136,23 @@ nav ul li a:hover {
   grid-area: 1 / 1 / 6 / 4;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 
-.about h3{
+.about h3 {
   color: rgb(237, 233, 233);
   text-align: left;
   padding: 5px;
   font-weight: 500;
 }
 
-.about p{
+.about p {
   color: gray;
   padding: 5px;
   font-size: 1rem;
   text-wrap: pretty;
+  line-height: 23px;
 }
 
 
@@ -187,7 +190,7 @@ nav ul li a:hover {
 
 
 
-.div3 img{
+.div3 img {
   aspect-ratio: 1/1;
   width: 80%;
   filter: drop-shadow(0 0 3px rgb(73, 57, 121));
@@ -209,7 +212,7 @@ footer {
   width: 100%;
   height: 100%;
   border: none;
-  display: block; 
+  display: block;
   position: absolute;
   opacity: 0.1;
 
@@ -247,7 +250,8 @@ footer {
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Ensures the text becomes visible */
+  -webkit-text-fill-color: transparent;
+  /* Ensures the text becomes visible */
   animation: gradient var(--animation-speed) linear infinite;
 }
 
@@ -255,9 +259,11 @@ footer {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -369,14 +375,44 @@ footer {
   border-top: none;
 }
 
-button{
-  width: 90%;
+button {
+  width: 95%;
   padding: 10px 0;
   background: transparent;
-  color: whitesmoke;
-  border: 1px solid gray;
-  border-radius: 2px;
+  color: rgb(200, 199, 199);
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 10px 0;
+
+
 }
 
+button:hover{
+  background-color: rgb(0, 0, 0); 
+  border: 1px solid rgb(217, 217, 217);
+}
 
+button::before{
+  content: "🟢";
+  padding: 0 10px;
+  animation: blink 2.5s ease-in infinite ;
+
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
 
