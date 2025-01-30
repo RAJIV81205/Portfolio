@@ -517,3 +517,21 @@ footer {
 
 
 }
+
+.project-details-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+.project-tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tags{
+  display: flex;
+  flex-direction: row;
+}

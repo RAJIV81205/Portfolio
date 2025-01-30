@@ -41,11 +41,34 @@ function Projects() {
       />
 
       <div className="project-container">
-        
+        <div className="project-details-container">
+          <img src={currentProject.logo} alt="logo" />
+          <h2>{currentProject.title}</h2>
+          <p>{currentProject.desc}</p>
+          <p>{currentProject.subdesc}</p>
 
+          <div className="project-tags">
+            <div className="tags">
+              {currentProject.tags.map((tag, tagIndex) => (
+                <div key={tagIndex} className="tech-logo">
+                  <img src={tag.path} alt={tag.name} />
+                </div>
+              ))}
+            </div>
+            <div className="live-site">
+              <a href={currentProject.href}>
+                <p>Check Live Site</p>
+                <img src="assets/arrow.png" alt="" />
+              </a>
+            </div>
+          </div>
 
+          <div className="arrow-container">
+            <img src="assets/pre" alt="" />
+            <img src="assets/next" alt="" />
+          </div>
+        </div>
       </div>
-        
     </div>
   );
 }
