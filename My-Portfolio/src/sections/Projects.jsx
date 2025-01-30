@@ -30,7 +30,7 @@ function Projects() {
   const currentProject = project[selectedProjectIndex];
 
   return (
-    <div className="project-sec">
+    <div className="project-sec" id="project">
       <TrueFocus
         sentence="My Selected Work"
         manualMode={false}
@@ -39,6 +39,7 @@ function Projects() {
         animationDuration={0.5}
         pauseBetweenAnimations={1}
       />
+      <div className="project-container"></div>
     </div>
   );
 }
