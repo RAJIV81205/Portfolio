@@ -41,63 +41,11 @@ function Projects() {
       />
 
       <div className="project-container">
-        {project.map((project, index) => (
-          <div key={index} className="project-wrapper">
-            {/* Left Side - Project Details */}
-            <div className="project-card">
-              <div className="project-image-container">
-                <img
-                  src={project.spotlight}
-                  alt={project.title}
-                  className="project-image"
-                />
-              </div>
+        
 
-              <div className="logo-container" style={project.logoStyle}>
-                <img className="logo-img" src={project.logo} alt="logo" />
-              </div>
 
-              <div className="project-text">
-                <p className="project-title animatedText">{project.title}</p>
-                <p className="animatedText">{project.desc}</p>
-                <p className="animatedText">{project.subdesc}</p>
-              </div>
-
-              <div className="project-tags">
-                <div className="tags">
-                  {project.tags.map((tag, tagIndex) => (
-                    <div key={tagIndex} className="tech-logo">
-                      <img src={tag.path} alt={tag.name} />
-                    </div>
-                  ))}
-                </div>
-
-                <a
-                  className="live-site"
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p>Check Live Site</p>
-                  <img
-                    src="/assets/arrow-up.png"
-                    alt="arrow"
-                    className="arrow-img"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* Right Side - Project Video */}
-            <div className="project-video">
-              <video controls className="video-player">
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        ))}
       </div>
+        
     </div>
   );
 }

@@ -129,6 +129,10 @@ nav ul li a:hover {
 
 }
 
+.about{
+  margin: 5vh 0;
+}
+
 
 .parent {
   display: grid;
@@ -496,3 +500,20 @@ footer {
   }
 }
 
+.project-sec{
+  margin: 5vh 0;
+  width: 100%;
+}
+
+.project-container{
+  width: 100%;
+  border: 1px solid #222;
+  background-color: #1111119e;
+  min-height: 60vh;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+
+
+}
