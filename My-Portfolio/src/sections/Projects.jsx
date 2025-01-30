@@ -68,6 +68,9 @@ function Projects() {
             <img src="assets/next" alt="" />
           </div>
         </div>
+        <div className="video-container">
+          <video src={currentProject.texture}></video>
+        </div>
       </div>
     </div>
   );
