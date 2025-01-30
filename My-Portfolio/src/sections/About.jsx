@@ -55,7 +55,7 @@ function About() {
           <img src="assets/grid5.png" alt="" />
           <h3>I’m very flexible with time zone communications & locations</h3>
           <p>I&apos;m based in India and open to remote work worldwide.</p>
-          <Button text="Let's Connect" />
+          <Button className="connect-btn" text="Let's Connect" />
         </SpotlightCard>
         <SpotlightCard
           className="custom-spotlight-card div4"
