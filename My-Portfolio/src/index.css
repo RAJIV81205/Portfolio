@@ -498,4 +498,12 @@ footer {
 
 .project-sec {
   margin-top: 2rem;
+  width: 100%;
+}
+
+.project-container{
+  height: 80vh;
+  background-color: rgba(128, 128, 128, 0.123);
+  border-radius: 10px;
+  border: 2px solid rgba(62, 62, 62, 0.453);
 }

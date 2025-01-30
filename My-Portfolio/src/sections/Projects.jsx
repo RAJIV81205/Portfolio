@@ -39,7 +39,9 @@ function Projects() {
         animationDuration={0.5}
         pauseBetweenAnimations={1}
       />
-      <div className="project-container"></div>
+      <div className="project-container">
+        
+      </div>
     </div>
   );
 }
