@@ -1,7 +1,7 @@
 import { project } from "../components/constant.js";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { Suspense, useState } from 'react';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { Suspense, useState } from "react";
 import TrueFocus from "../components/TrueFocus.jsx";
 
 function Projects() {
@@ -30,8 +30,8 @@ function Projects() {
   const currentProject = project[selectedProjectIndex];
 
   return (
-  <div className="project-sec">
-    <TrueFocus
+    <div className="project-sec">
+      <TrueFocus
         sentence="My Selected Work"
         manualMode={false}
         blurAmount={5}
@@ -39,8 +39,7 @@ function Projects() {
         animationDuration={0.5}
         pauseBetweenAnimations={1}
       />
-  </div>
-    
+    </div>
   );
 }
 
