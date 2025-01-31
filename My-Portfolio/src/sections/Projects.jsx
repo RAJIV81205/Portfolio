@@ -43,7 +43,7 @@ function Projects() {
       <div className="project-container">
         <div className="project-details-container">
           <div
-            className="project-logo"
+            className="project-logo animatedText"
             style={{
               border: `${currentProject.logoStyle.border}`,
             }}
@@ -51,12 +51,12 @@ function Projects() {
             <img src={currentProject.logo} alt="logo" />
           </div>
 
-          <h2>{currentProject.title}</h2>
-          <p>{currentProject.desc}</p>
-          <p>{currentProject.subdesc}</p>
+          <h2 className="animatedText">{currentProject.title}</h2>
+          <p className="animatedText">{currentProject.desc}</p>
+          <p className="animatedText">{currentProject.subdesc}</p>
 
-          <div className="project-tags">
-            <div className="tags">
+          <div className="project-tags animatedText" >
+            <div className="tags" >
               {currentProject.tags.map((tag, tagIndex) => (
                 <div key={tagIndex} className="tech-logo">
                   <img src={tag.path} alt={tag.name} />

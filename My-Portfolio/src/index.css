@@ -318,7 +318,6 @@ footer {
   margin: 0 auto;
   display: inline-block;
   max-width: fit-content;
-  border-radius: 1.25rem;
   font-weight: 500;
   overflow: hidden;
   cursor: pointer;
@@ -578,6 +577,7 @@ footer {
   height: 30px;
   padding: 10px;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
 .live-site a{
@@ -617,4 +617,9 @@ footer {
 
 .arrow-container img:hover{
   filter: invert(0%);
+}
+
+.video-container{
+  width: 50%;
+  height: 100%
 }
