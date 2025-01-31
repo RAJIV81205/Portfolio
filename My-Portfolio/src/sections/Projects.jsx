@@ -42,7 +42,15 @@ function Projects() {
 
       <div className="project-container">
         <div className="project-details-container">
-          <img src={currentProject.logo} alt="logo" />
+          <div
+            className="project-logo"
+            style={{
+              border: `${currentProject.logoStyle.border}`,
+            }}
+          >
+            <img src={currentProject.logo} alt="logo" />
+          </div>
+
           <h2>{currentProject.title}</h2>
           <p>{currentProject.desc}</p>
           <p>{currentProject.subdesc}</p>

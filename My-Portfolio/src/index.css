@@ -532,12 +532,19 @@ footer {
   color: rgb(207, 205, 205);
 }
 
-.project-details-container img{
-  padding: 5px;
-  border-radius: 2px;
-  background-color: rgb(32, 31, 31);
+.project-logo{
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(44, 43, 43, 0.29);
+}
+
+.project-logo img{
+  height: 40px;
   aspect-ratio: 1/1;
-  height:20px;
 }
 
 .project-tags{
