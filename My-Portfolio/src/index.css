@@ -506,11 +506,9 @@ footer {
 }
 
 .project-container{
-  padding: 10px;
- 
+  padding: 25px;
   border: 1px solid #222;
   background-color: #1111119e;
-  min-height: 60vh;
   border-radius: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -553,25 +551,70 @@ footer {
 }
 
 .project-tags{
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .tags{
   display: flex;
   flex-direction: row;
+  gap: 15px;
 }
 
 .tech-logo{
+  border-radius: 5px;
+  border: 1px solid rgba(141, 140, 140, 0.327);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.371);
+  background-color: rgba(50, 50, 50, 0.371);
 }
 
 .tech-logo img{
   height: 30px;
-  margin: 10px 5px;
+  padding: 10px;
   aspect-ratio: 1/1;
+}
+
+.live-site a{
+  transition: all 0.32s;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-site img{
+  width: 20px;
+  filter: invert(50%);
+}
+
+.arrow-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+.arrow-container img{
+  transition: all 0.32s;
+  cursor: pointer;
+  filter: invert(100%);
+  height: 25px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff5d;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.arrow-container img:hover{
+  filter: invert(0%);
 }

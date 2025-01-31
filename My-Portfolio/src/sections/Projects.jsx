@@ -66,14 +66,14 @@ function Projects() {
             <div className="live-site">
               <a href={currentProject.href}>
                 <p>Check Live Site</p>
-                <img src="assets/arrow.png" alt="" />
+                <img src="assets/diagonal-arrow.png" alt="" />
               </a>
             </div>
           </div>
 
           <div className="arrow-container">
-            <img src="assets/pre" alt="" />
-            <img src="assets/next" alt="" />
+            <img src="assets/previous.png" alt="" onClick={()=>handleNavigation("previous")}/>
+            <img src="assets/next.png" alt="" onClick={()=>handleNavigation("next")}/>
           </div>
         </div>
         <div className="video-container">
