@@ -560,7 +560,7 @@ footer {
 .tags{
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
 }
 
 .tech-logo{
