@@ -16,27 +16,27 @@ export const project = [{
         {
             id: 1,
             name: 'HTML',
-            path: '/assets/react.svg',
+            path: '/assets/html.png',
         },
         {
             id: 2,
             name: 'CSS',
-            path: 'assets/tailwindcss.png',
+            path: 'assets/css.png',
         },
         {
             id: 3,
             name: 'Javascript',
-            path: '/assets/typescript.png',
+            path: '/assets/js.png',
         },
         {
             id: 4,
             name: 'Node.js',
-            path: '/assets/framer.png',
+            path: '/assets/node.png',
         },
         {
             id: 5,
             name: 'Mongo DB',
-            path: '/assets/framer.png',
+            path: '/assets/mongo.svg',
         },
     ],
 },];
