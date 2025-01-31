@@ -288,6 +288,15 @@ nav ul li a:hover {
     height: 30px;
   }
 
+  .project-details-container{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-tags{
+    gap: 25px;
+    flex-direction: column !important;
+  }
 
 }
 
@@ -518,7 +527,6 @@ footer {
 }
 
 .project-details-container{
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -619,7 +627,12 @@ footer {
   filter: invert(0%);
 }
 
-.video-container{
-  width: 50%;
-  height: 100%
+
+
+
+@media screen and (max-width:1200px) {
+  .project-container{
+    flex-wrap: wrap-reverse;
+  }
+  
 }
