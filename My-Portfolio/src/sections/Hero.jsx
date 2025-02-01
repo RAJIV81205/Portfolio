@@ -27,7 +27,7 @@ const Hero = () => {
     // Show GradientText after 1 second
     const timeout = setTimeout(() => {
       setShowGradientText(true);
-    }, 2500);
+    }, 4000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -75,7 +75,7 @@ const Hero = () => {
       />
       <h1>
         <SplitText
-          text="Hi, I'm Rajiv"
+          text="Hello , It's me Rajiv!"
           className="split-text"
           delay={150}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
