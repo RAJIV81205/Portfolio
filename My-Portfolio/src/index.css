@@ -518,6 +518,7 @@ footer {
 }
 
 .project-container {
+  gap:50px;
   padding: 25px;
   border: 1px solid #222;
   background-color: #1111119e;
@@ -658,12 +659,13 @@ footer {
   margin: auto;
   overflow: hidden;
   border-radius: 2px;
+  border: 1px solid white;
 
 }
 
 .video-container video {
 
-  width: 90%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 5px;
