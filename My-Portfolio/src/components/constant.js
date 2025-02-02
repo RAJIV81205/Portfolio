@@ -89,9 +89,9 @@ export const project = [
         ],
     },{
         title: 'Easy-Rail - Rail Solution',
-        desc: 'ChatFly is a real-time messaging platform that allows users to connect and communicate seamlessly. With a user-friendly interface and secure messaging, it offers an engaging chat experience.',
+        desc: 'Easy-Rail is a comprehensive railway information platform that helps users check train schedules, PNR status, live train status, and upcoming trains with ease.',
         subdesc:
-            'Built using modern web technologies like HTML, CSS, JavaScript, Node.js, MongoDB, and Socket IO, ChatFly ensures fast, reliable, and secure real-time communication for users.',
+            'Built using modern web technologies like HTML, CSS, JavaScript, and Node.js, Easy-Rail ensures a seamless experience for railway travelers by providing accurate and real-time train information.',
         href: 'https://easy-rail.onrender.com/',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/easy-rail.png', 
@@ -123,7 +123,8 @@ export const project = [
                 path: '/assets/node.png',
             },
         ],
-    }
+    },
+    
 
 
 
