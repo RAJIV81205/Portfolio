@@ -75,7 +75,7 @@ const Hero = () => {
       />
       <h1>
         <SplitText
-          text="Hello , It's me Rajiv!"
+          text="Hi , It's Rajiv!"
           className="split-text"
           delay={150}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
