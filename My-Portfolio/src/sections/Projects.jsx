@@ -55,8 +55,8 @@ function Projects() {
           <p className="animatedText">{currentProject.desc}</p>
           <p className="animatedText">{currentProject.subdesc}</p>
 
-          <div className="project-tags animatedText" >
-            <div className="tags" >
+          <div className="project-tags animatedText">
+            <div className="tags">
               {currentProject.tags.map((tag, tagIndex) => (
                 <div key={tagIndex} className="tech-logo">
                   <img src={tag.path} alt={tag.name} />
@@ -72,12 +72,20 @@ function Projects() {
           </div>
 
           <div className="arrow-container">
-            <img src="assets/previous.png" alt="" onClick={()=>handleNavigation("previous")}/>
-            <img src="assets/next.png" alt="" onClick={()=>handleNavigation("next")}/>
+            <img
+              src="assets/previous.png"
+              alt=""
+              onClick={() => handleNavigation("previous")}
+            />
+            <img
+              src="assets/next.png"
+              alt=""
+              onClick={() => handleNavigation("next")}
+            />
           </div>
         </div>
         <div className="video-container">
-          <video src={currentProject.texture}></video>
+          <video src={currentProject.texture} autoPlay muted loop></video>
         </div>
       </div>
     </div>

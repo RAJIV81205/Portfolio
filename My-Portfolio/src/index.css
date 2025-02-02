@@ -636,3 +636,24 @@ footer {
   }
   
 }
+
+.video-container {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+}

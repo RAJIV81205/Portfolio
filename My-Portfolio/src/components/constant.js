@@ -93,7 +93,7 @@ export const project = [
         subdesc:
             'Built using modern web technologies like HTML, CSS, JavaScript, and Node.js, Easy-Rail ensures a seamless experience for railway travelers by providing accurate and real-time train information.',
         href: 'https://easy-rail.onrender.com/',
-        texture: '/textures/project/project1.mp4',
+        texture: '/assets/easyrail.mp4',
         logo: '/assets/easy-rail.png', 
         logoStyle: {
             backgroundColor: '#2A1816',
