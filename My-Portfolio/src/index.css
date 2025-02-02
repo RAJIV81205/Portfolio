@@ -298,6 +298,10 @@ nav ul li a:hover {
     flex-direction: column !important;
   }
 
+  .project-details-container h2{
+    text-align: center;
+  }
+
 }
 
 
@@ -633,7 +637,14 @@ footer {
 @media screen and (max-width:1200px) {
   .project-container{
     flex-wrap: wrap-reverse;
+    gap: 20px;
   }
+
+  .video-container video {
+    width: 100% !important;
+  }
+
+  
   
 }
 
@@ -643,11 +654,11 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px;
   margin: auto;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+ 
 }
 
 .video-container video {
@@ -656,4 +667,5 @@ footer {
   display: block;
   border-radius: 5px;
   object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(45, 45, 45, 0.2);
 }
