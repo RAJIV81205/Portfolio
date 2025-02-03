@@ -5,7 +5,7 @@ export const project = [
         subdesc:
             'Built using modern web technologies like HTML, CSS, JavaScript, Node.js, and MongoDB, BookHive ensures a smooth and interactive user experience for book enthusiasts.',
         href: 'https://bookhive-99.web.app/',
-        texture: '/textures/project/project1.mp4',
+        texture: '/assets/bookhive.mp4',
         logo: '/assets/bookhive.png',
         logoStyle: {
             backgroundColor: '#2A1816',
