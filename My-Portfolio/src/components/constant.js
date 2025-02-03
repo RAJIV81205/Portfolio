@@ -123,6 +123,33 @@ export const project = [
                 path: '/assets/node.png',
             },
         ],
+    },{
+        title: 'Portfolio',
+        desc: 'Easy-Rail is a comprehensive railway information platform that helps users check train schedules, PNR status, live train status, and upcoming trains with ease.',
+        subdesc:
+            'Built using modern web technologies like HTML, CSS, JavaScript, and Node.js, Easy-Rail ensures a seamless experience for railway travelers by providing accurate and real-time train information.',
+        href: 'https://rajiv-dubey.onrender.com/',
+        texture: '/assets/easyrail.mp4',
+        logo: '/assets/easy-rail.png', 
+        logoStyle: {
+            backgroundColor: '#2A1816',
+            border: '1px solid #000000',
+            boxShadow: '0px 0px 60px 0px #fcae05',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'CSS',
+                path: '/assets/css.png',
+            },
+            
+        ],
     },
     
 
