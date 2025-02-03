@@ -4,7 +4,7 @@ export const project = [
         desc: 'BookHive is an online platform that brings book lovers together, offering a seamless experience for browsing, purchasing, and exploring a vast collection of books across various genres.',
         subdesc:
             'Built using modern web technologies like HTML, CSS, JavaScript, Node.js, and MongoDB, BookHive ensures a smooth and interactive user experience for book enthusiasts.',
-        href: 'https://bookhive-99.web.app/',
+        href: 'https://bookhive-99.firebaseapp.com/',
         texture: '/assets/bookhive.mp4',
         logo: '/assets/bookhive.png',
         logoStyle: {
