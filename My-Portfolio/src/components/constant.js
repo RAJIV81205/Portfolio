@@ -129,8 +129,8 @@ export const project = [
         subdesc:
             'Built using modern web technologies like React, CSS, and JavaScript, this portfolio highlights my expertise in frontend and backend development, featuring responsive design and smooth animations.',
         href: 'https://rajiv-dubey.onrender.com/',
-        texture: '/assets/easyrail.mp4', // Update if needed
-        logo: '/assets/portfolio.png', // Update if you have a specific logo
+        texture: '/assets/easyrail.mp4', 
+        logo: '/assets/portfolio.png', 
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '1px solid #000000',
