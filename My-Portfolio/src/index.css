@@ -512,8 +512,8 @@ footer {
   }
 }
 
-.project-sec {
-  margin: 5vh 0;
+.project-sec , .contact-sec  {
+  margin:5vh 0
 
 }
 
