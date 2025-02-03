@@ -84,7 +84,7 @@ function Projects() {
             />
           </div>
         </div>
-        <div className="video-container">
+        <div className="video-container animatedText">
           <video src={currentProject.texture} autoPlay muted loop></video>
         </div>
       </div>
