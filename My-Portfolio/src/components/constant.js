@@ -133,7 +133,7 @@ export const project = [
         logo: '/assets/portfolio.png', 
         logoStyle: {
             backgroundColor: '#2A1816',
-            border: '1px solid #000000',
+            border: '1px solid #6d0676',
             boxShadow: '0px 0px 60px 0px #fcae05',
         },
         spotlight: '/assets/spotlight1.png',
