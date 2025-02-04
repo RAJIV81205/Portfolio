@@ -1,5 +1,6 @@
 import TrueFocus from "../components/TrueFocus";
 
+
 function Contact() {
   return (
     <div className="contact-sec" id="contact">
@@ -11,6 +12,8 @@ function Contact() {
         animationDuration={0.5}
         pauseBetweenAnimations={1}
       />
+      
+      
     </div>
   );
 }
