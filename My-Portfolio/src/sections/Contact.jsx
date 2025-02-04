@@ -18,7 +18,11 @@ function Contact() {
       />
 
       <div className="contact-container">
-        
+        <div className="social-icons">
+          <div className="icon"><a href="https://github.com/RAJIV81205"><img src="assets/github.png" alt="" /></a></div>
+          <div className="icon"><a href="https://github.com/RAJIV81205"><img src="assets/instagram.png" alt="" /></a></div>
+
+        </div>
       </div>
 
 
