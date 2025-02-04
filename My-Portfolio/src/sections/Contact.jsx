@@ -1,9 +1,13 @@
 import TrueFocus from "../components/TrueFocus";
 
 
+
 function Contact() {
+
+  
+
   return (
-    <div className="contact-sec" id="contact">
+    <div className="contact-sec" id="contact" >
       <TrueFocus
         sentence="Contact Me"
         manualMode={false}
@@ -12,7 +16,14 @@ function Contact() {
         animationDuration={0.5}
         pauseBetweenAnimations={1}
       />
-      
+
+      <div className="contact-container">
+        
+      </div>
+
+
+
+
       
     </div>
   );
