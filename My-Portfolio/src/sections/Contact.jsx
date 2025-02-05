@@ -60,6 +60,7 @@ function Contact() {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
+            autoComplete="off"
           />
           {errors.name && <p className="error">{errors.name}</p>}
 
@@ -70,6 +71,7 @@ function Contact() {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
+            autoComplete="off"
           />
           {errors.email && <p className="error">{errors.email}</p>}
 
@@ -79,6 +81,7 @@ function Contact() {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
+            autoComplete="off"
           />
           {errors.message && <p className="error">{errors.message}</p>}
 
@@ -86,6 +89,22 @@ function Contact() {
           {success && <p className="success">{success}</p>}
         </form>
       </div>
+
+      <div className="social-buttons">
+        <a href="https://github.com/RAJIV81205" target="_blank" rel="noopener noreferrer" className="social-btn github">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          Follow me on GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/rajiv-dubey-/" target="_blank" rel="noopener noreferrer" className="social-btn linkedin">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+          Connect on LinkedIn
+        </a>
+        <a href="https://www.https://instagram.com/ra.j.iv_" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" />
+          Follow me on Instagram
+        </a>
+      </div>
+
     </div>
   );
 }

@@ -681,7 +681,7 @@ footer {
   width: 100%;
   max-width: 500px;
   margin: 40px auto;
-  padding: 20px; /* Adjust this if needed */
+  padding: 20px; 
   background: #5a595938; 
   color: #fff; 
   border-radius: 8px;
@@ -697,7 +697,7 @@ footer {
   gap: 15px; 
 }
 
-label {
+.contact-container label {
   font-weight: bold;
   text-align: left;
   display: block;
@@ -723,7 +723,7 @@ label {
 }
 
 /* Button */
-button {
+.contact-container button {
   background-color: #333;
   color: white;
   border: none;
@@ -735,6 +735,58 @@ button {
   width: 100%;
 }
 
-button:hover {
+.contact-container button:hover {
   background-color: #444;
+}
+
+
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease, transform 0.2s ease;
+  color: white;
+}
+
+.social-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Button Colors */
+.github {
+  background: #222;
+}
+
+.github img{
+  filter: invert(1);
+}
+
+.linkedin {
+  background: #0a66c2;
+}
+
+.instagram {
+  background: #b43aac;
+}
+
+/* Hover Effect */
+.social-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
