@@ -312,9 +312,6 @@ nav ul li a:hover {
 
 
 
-footer {
-  margin: 5vh 0;
-}
 
 .squares-canvas {
   width: 100%;
@@ -576,6 +573,8 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tech-logo {
@@ -792,6 +791,18 @@ footer {
   opacity: 0.9;
 }
 
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-top: 1px solid gray;
+  border-radius: 1px;
+  margin: 5vh 0 0 0;
+  padding: 20px 0;
+}
+
 .shiny-text {
   text-align: center;
   color: #b5b5b5a4;
@@ -806,6 +817,7 @@ footer {
   background-clip: text;
   display: inline-block;
   animation: shine 5s linear infinite;
+  font-size: 1.1rem;
 }
 
 @keyframes shine {
