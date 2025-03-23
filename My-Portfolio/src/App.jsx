@@ -5,20 +5,18 @@ import Footer from "./sections/Footer.jsx";
 import Projects from "./sections/Projects.jsx";
 import Contact from "./sections/Contact.jsx";
 
-
 function App() {
   return (
-    <>
-      
+    <div className="app-container">
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <main className="main-content">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
-
-      
-    </>
+    </div>
   );
 }
 
