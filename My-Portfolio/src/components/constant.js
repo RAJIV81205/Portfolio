@@ -86,7 +86,7 @@ export const project = [
     },
     {
         title: 'RapidBite',
-        desc: 'RapidBite is a platform that connects food lovers with those in need of food. It allows users to find food, request food, and donate food.',
+        desc: 'RapidBite is a platform that delivers groceries at your doorstep. It is a full stack application.It contains features like user authentication, payment gateway, and order tracking.',
         subdesc:
             'Built using modern web technologies like React, Tailwind CSS, and Node.js, this platform highlights my expertise in frontend and backend development, featuring responsive design and smooth animations.',
         href: 'https://rapidbite.vercel.app/',
