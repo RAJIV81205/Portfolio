@@ -85,6 +85,45 @@ export const project = [
         ],
     },
     {
+        title: 'RapidBite',
+        desc: 'RapidBite is a platform that connects food lovers with those in need of food. It allows users to find food, request food, and donate food.',
+        subdesc:
+            'Built using modern web technologies like React, Tailwind CSS, and Node.js, this platform highlights my expertise in frontend and backend development, featuring responsive design and smooth animations.',
+        href: 'https://rapidbite.vercel.app/',
+        texture: '/assets/rapidbite.mp4',
+        logo: '/assets/rapidbite.png',
+        logoStyle: {
+            backgroundColor: '#2A1816',
+            border: '1px solid #2cb030',
+            boxShadow: '0px 0px 60px 0px #2cb030',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'Tailwind CSS',
+                path: '/assets/tailwind.png',
+            },
+            {
+                id: 3,
+                name: 'Node.js',
+                path: '/assets/node.png',
+            },
+            {
+                id: 4,
+                name: 'MongoDB',
+                path: '/assets/mongo.svg',
+            },
+           
+            
+        ],
+    },
+    {
         title: 'ChatFly - Online Chat Application',
         desc: 'ChatFly is a real-time messaging platform that allows users to connect and communicate seamlessly. With a user-friendly interface and secure messaging, it offers an engaging chat experience.',
         subdesc:

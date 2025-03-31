@@ -512,7 +512,7 @@ nav ul li a:hover {
 }
 
 .project-sec , .contact-sec  {
-  margin:5vh 0
+  margin-top:10vh
 
 }
 
@@ -661,6 +661,7 @@ nav ul li a:hover {
   overflow: hidden;
   border-radius: 2px;
   border: 2px solid white;
+  background-color: #ffffff;
 
 }
 

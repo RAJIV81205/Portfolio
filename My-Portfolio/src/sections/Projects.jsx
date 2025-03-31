@@ -30,7 +30,7 @@ function Projects() {
   const currentProject = project[selectedProjectIndex];
 
   return (
-    <div className="project-sec" id="project">
+    <div className="project-sec" id="project" >
       <TrueFocus
         sentence="My Selected Work"
         manualMode={false}
